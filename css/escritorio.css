@@ -1,0 +1,75 @@
+footer{
+	padding: 0% 20% 0% 20%;
+}
+
+footer div{
+	display: inline-block;
+	margin: 1% 1%;
+	vertical-align: bottom; 
+	width: 30%;
+}
+
+hgroup{
+	padding: 0.4em 0;
+	margin: 0 2%;
+	width: 23%;
+}
+
+h1,h2{
+	margin: 0.1em;
+}
+
+hgroup, nav{
+	display: inline-block;
+	vertical-align: top
+}
+
+nav{
+	text-align: center;
+	width: 70%;
+}
+
+nav ul li{
+	display: inline-block;
+	padding: 1.5em 0;
+	width: 24%;
+}
+
+#chat{
+	padding: 1% 2%;
+	width: 100%;
+}
+
+#contenedor{
+	border: solid 2px red;
+	display: block;
+	height: 27em;
+	margin-bottom: 1em;
+	width: 100%;
+}
+
+#ContenedorMSN {
+	padding: 1%;
+	margin-right: 1%;
+	max-width: 65%;
+	width: 64%;
+}
+
+#ContenedorMSN, #listaUs {
+	display: inline-block;
+	vertical-align: top;
+}
+
+#listaUs {
+	height: 27em;
+	width: 30%;
+}
+
+#mensaje{
+	width: 90%;
+}
+
+#mensaje, #enviar{
+	display: inline-block;
+	vertical-align: bottom;
+}

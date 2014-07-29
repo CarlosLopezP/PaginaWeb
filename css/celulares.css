@@ -1,0 +1,48 @@
+nav ul li{
+	width: 99%;
+	border: solid 2px #D8D8D8;
+	display: block;
+	text-align: center;
+}
+header div nav ul{
+	padding:0%;
+}
+
+#chat{
+	padding: 1% 2%;
+	width: 100%;
+}
+
+#contenedor{
+	border: solid 2px red;
+	display: block;
+	height: 27em;
+	margin-bottom: 1em;
+	width: 100%;
+}
+
+#ContenedorMSN {
+	padding: 1%;
+	margin-right: 1%;
+	max-width: 65%;
+	width: 64%;
+}
+
+#ContenedorMSN, #listaUs {
+	display: inline-block;
+	vertical-align: top;
+}
+
+#listaUs {
+	height: 27em;
+	width: 30%;
+}
+
+#mensaje{
+	width: 90%;
+}
+
+#mensaje, #enviar{
+	display: inline-block;
+	vertical-align: bottom;
+}
