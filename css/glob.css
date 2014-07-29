@@ -1,0 +1,41 @@
+body{
+	background: #9DC4F6;
+}
+
+footer div{
+	background: #9DC4F6;
+}
+
+header,footer{
+	background: #61A1F3;
+}
+
+hgroup a{
+	color: #036BF0;
+	text-decoration: none;
+}
+
+nav{
+	background: #2A82F2;
+}
+
+nav ul li{
+	background: #9DC4F6;
+}
+
+nav ul li a{
+	color: #2A82F2;
+	text-decoration: none;
+}
+
+#chat{
+	background: #2A82F2;
+}
+
+#ContenedorMSN{
+	background: #9DC4F6;
+}
+
+#listaUs{
+	background: #61A1F3;
+}
