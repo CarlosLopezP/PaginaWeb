@@ -5,22 +5,24 @@
 		<meta name="viewport" content="width=device-width; initial-scale=1.0">
 		<title>Página de Prueba</title>
 		<link href="../css/normalize.css" rel="stylesheet" />
-		<link href="../css/glob.css" rel="stylesheet" />
-		<link href="../css/resStd.css" rel="stylesheet" media="screen and (min-width: 1200px)" />
+		<link href="../css/globales.css" rel="stylesheet" />
+		<link href="../css/celulares.css" rel="stylesheet" media="screen and (max-width: 800px)"/>
+		<link href="../css/lapTablet.css" rel="stylesheet" media="screen and (max-width:1024px) and (min-width:801px) "/>
+		<link href="../css/escritorio.css" rel="stylesheet" media="screen and (min-width: 1025px)" />
 	</head>
 	<body>
 		<header>
 			<div>
 				<hgroup >
-					<h1><a href="index.html">Página de Prueba</a></h1>
-					<h2><a href="index.html">HTML5, CSS3 Y JavaScript</a></h2>
+					<h1><a class="letras" href="index.html">Página de Prueba</a></h1>
+					<h2><a class="letras" href="index.html">HTML5, CSS3 Y JavaScript</a></h2>
 				</hgroup>
 				<nav>
 					<ul>
-						<li><a href="chat.html">Chat</a></li>
-						<li><a href="#">Opción 2</a></li>
-						<li><a href="#">Opción 3</a></li>
-						<li><a href="#">Opción 4</a></li>
+						<li><a class="letras" href="chat.html">Chat</a></li>
+						<li><a class="letras" href="#">Opción 2</a></li>
+						<li><a class="letras" href="#">Opción 3</a></li>
+						<li><a class="letras" href="#">Opción 4</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -31,15 +33,16 @@
 		</section>
 		<footer>
 			<div>
-				<img src="../imagen/facebook-small.png" />
-				<img src="../imagen/twitter-small.png" />
+				<a href="https://facebook.com">  <img src="../imagenes/Facebook.png" /></a>
+				<a href="https://twitter.com"> <img src="../imagenes/Twitter-Bird.png" /></a>
+				<a href="https://github.com"><img src="../imagenes/Github.png" /></a>
 			</div>
 			<div>
 				<input name="buscador" type="buscador" placeholder="Buscando" required="required"/>
                 <input type="submit" value="Buscar"/>
 			</div>
 			<div>
-				sección 3
+				<p class="letras">Derechos Reservados</p>
 			</div>
 		</footer>
 	</body>
