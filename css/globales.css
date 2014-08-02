@@ -7,6 +7,7 @@ body {
 	background: linear-gradient(272deg, rgb(57, 94, 255) 0%, rgb(57, 175, 255) 100%);
 	background-size: cover;
 	background-attachment: fixed;
+	overflow-x: hidden;
 }
 
 html, body {
@@ -17,16 +18,117 @@ header, footer {
 	background: #1C1B1A;
 }
 
+#chat{
+	border: solid 2px red;
+}
+
+#contenedor{
+	overflow-y: auto;
+}
+
 #ContenedorMSN {
 	background: #9DC4F6;
 }
 
-#listaUs {
+#mensaje{
+	border-radius: 10px;
+	padding: 1%;
+	resize: none;
+}
+
+#usuarios {
 	background: #61A1F3;
+}
+
+#login{
+	border: solid 2px red;
+}
+
+#login div{
+	border: solid 2px black;
+}
+
+.contMsnD {
+	float: right;
+	padding-right: 1em;
+}
+
+.contMsnD, .contMsnI {
+	width: 100%;
+}
+
+.contMsnI {
+	float: left;
+}
+
+.espMsnD {
+	float: right;
+	right: 22px;
+	text-align: right;
+}
+
+.espMsnD .tmMsn {
+	background: #E2F7FB;
+	color: #52ACBD;
+}
+
+.espMsnD, .espMsnI {
+	margin: 0.5em 0;
+	width: auto;
+	max-width: 60%;
+}
+
+.espMsnI .tmMsn {
+	background: #52ACBD;
+	color: #E2F7FB;
+}
+
+.espMsnI {
+	float: left;
+	margin-left: 1em;
+	left: 22px;
+	text-align: left;
 }
 
 .letras{
 	color: #D8D8D8;
 	text-decoration: none;
 	text-shadow: 1px 1px 1px #00779F;
+}
+
+.tmMsn {
+	border-radius: 0.6em;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+	margin: 0 0.4em 0.8em 0.4em;
+	max-width: 80%;
+	padding: 0.1em 0.4em;
+	width: auto;
+}
+
+.Msn {
+	text-align: left;
+	word-wrap: break-word;
+}
+
+.tmMsn, .user {
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+.separador {
+	border-left: solid 3px blue;
+}
+
+.user {
+	background: #5DB7F2;
+	border: solid 1px #24A1F2;
+	border-radius: 90px;
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+	max-width: 2.5em;
+	max-height: 2.5em;
+}
+
+.user, .Msn {
+	margin: 0;
+	padding: 0;
 }
