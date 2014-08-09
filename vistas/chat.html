@@ -1,25 +1,37 @@
-<head>
-	<link href="../css/normalize.css" rel="stylesheet" />
-	<link href="../css/globales.css" rel="stylesheet" />
-	<link href="../css/celulares.css" rel="stylesheet" media="screen and (max-width: 800px)"/>
-	<link href="../css/lapTablet.css" rel="stylesheet" media="screen and (min-width: 801px) and (max-width: 1024px)"/>
-	<link href="../css/escritorio.css" rel="stylesheet" media="screen and (min-width: 1025px)" />
-</head>
-
-<h2><a href="layout.html">menu</a></h2>
-<section id="chat">
+{% extends "layout.html" %}
+{% block vistas %}
+<script src="/socket.io/socket.io.js"></script>
+<script src="../js/mensChat.js"></script>
+<section id="login" style="display:none;">
+	<div id="cLogin">
+		<h2>Login</h2>
+		<input id="nuevoUsuario" type="text" placeholder="Usuario" required="required" />
+		<button id="agregar">
+			Enviar
+		</button>
+	</div>
+</section>
+<section id="chat" style="display:none;">
 	<article id="ContenedorMSN">
-		<div id="contenedor"> </div>
-		<textarea id="mensaje" cols= "40"  rows= "5" wrap="soft" placeholder="Escribe tu mensaje"></textarea>
-		<button id="enviar">Enviar</button>
+		<div id="contenedor"></div>
+		<textarea id="mensaje" cols= "40" rows= "4" wrap="soft" placeholder="Escribe tu mensaje"></textarea>
+		<button id="enviar">
+			Enviar
+		</button>
 	</article>
-	<aside id="listaUs">
-		
+	<aside id="usuarios">
 		<h3>Usuarios Conectados</h3>
-		<ul>
-			<li>Bill Gates</li>
-			<li>Pepe el Toro</li>
-			<li>Yoloxóchitl Bustamante</li>
+		<ul id="listaUs">
+			<li>
+				Bill Gates
+			</li>
+			<li>
+				Pepe el Toro
+			</li>
+			<li>
+				Yoloxóchitl Bustamante
+			</li>
 		</ul>
 	</aside>
 </section>
+{% endblock %}

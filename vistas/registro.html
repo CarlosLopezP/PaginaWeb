@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block vistas %}
+<script src="../js/login.js"></script>
+<section id="registro">
+		<form  action="/chat"  name="usuario" method="post" onsubmit="agregar(this)">
+			<input type="text" name="usuario" id="user" placeholder="Escriba su Usuario"/>
+			<button id="agrega">Enviar</button>
+		</form>
+</section>
+{% endblock %}

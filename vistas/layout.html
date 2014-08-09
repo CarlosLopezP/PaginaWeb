@@ -14,12 +14,12 @@
 		<header>
 			<div>
 				<hgroup >
-					<h1><a class="letras" href="index.html">Página de Prueba</a></h1>
-					<h2><a class="letras" href="index.html">HTML5, CSS3 Y JavaScript</a></h2>
+					<h1><a class="letras" href="/">Página de Prueba</a></h1>
+					<h2><a class="letras" href="/">HTML5, CSS3 Y JavaScript</a></h2>
 				</hgroup>
 				<nav>
 					<ul>
-						<li><a class="letras" href="chat.html">Chat</a></li>
+						<li><a class="letras" href="/chat">Chat</a></li>
 						<li><a class="letras" href="#">Opción 2</a></li>
 						<li><a class="letras" href="#">Opción 3</a></li>
 						<li><a class="letras" href="#">Opción 4</a></li>
@@ -27,22 +27,23 @@
 				</nav>
 			</div>
 		</header>
-		<section >
-			<!-- elementos de la página -->	
-			todo va aquí	
-		</section>
+		<!-- elementos de la página -->
+		{% block vistas %}
+		{% endblock %}
 		<footer>
 			<div>
-				<a href="https://facebook.com">  <img src="../imagenes/Facebook.png" /></a>
+				<a href="https://facebook.com"> <img src="../imagenes/Facebook.png" /></a>
 				<a href="https://twitter.com"> <img src="../imagenes/Twitter-Bird.png" /></a>
 				<a href="https://github.com"><img src="../imagenes/Github.png" /></a>
 			</div>
 			<div>
 				<input name="buscador" type="buscador" placeholder="Buscando" required="required"/>
-                <input type="submit" value="Buscar"/>
+				<input type="submit" value="Buscar"/>
 			</div>
 			<div>
-				<p class="letras">Derechos Reservados</p>
+				<p class="letras">
+					Derechos Reservados
+				</p>
 			</div>
 		</footer>
 	</body>
